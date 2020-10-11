@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://sch67.mskobr.ru/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+	    <style type="text/css">
+			@import "https://static3.mos.ru/upload/share/fonts/fonts.css";
+			* {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			html, body { height: 100% }
+			body {
+				margin: 0;
+				padding: 1px;
+			}
+
+			.addfox-banner {
+					position: relative;
+			    width: 100%;
+			    max-width: 380px;
+			    min-width: 220px;
+			    height: 100%;
+			    max-height: 365px;
+			    padding: 20px 24px;
+			    text-align: left;
+			    font-family: "PT Sans", sans-serif;
+					color: #0C1014;
+					background-color: #fff;		    
+			    border: 1px solid #DDE3E8;
+			    overflow: hidden;
+			    -webkit-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+			    transition: all .2s ease-in-out;
+			}
+
+			.addfox-banner:hover {
+				border: 1px solid #9EA4AC;
+			}
+
+			.addfox-link {
+				text-decoration: none;
+				outline: none;
+			}
+
+			.addfox-link:hover,
+			.addfox-link:active {
+				text-decoration: none;
+			}
+
+			.addfox-banner__title {
+				font-size: 20px;
+				line-height: 23px;
+				font-weight: 900;
+				margin-bottom: 13px;
+			}
+
+			.addfox-banner__subtitle {
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: 400;
+				opacity: 0.6;
+			}
+
+			#animation_container,
+			canvas,
+			#dom_overlay_container {
+				position: absolute;
+				margin: auto;
+				right: 0;
+				bottom: 0;
+				width: 226px !important;
+				height: 237px !important;
+			}
+
+			.addfox-banner__button {
+				position: absolute;
+				bottom: 24px;
+				left: 24px;
+				padding: 13px 24px 15px;
+				background-color: #fff;
+				font-size: 16px;
+				line-height: 20px;
+				font-weight: 900;
+				color: #0C1014;
+				border-radius: 2px;
+				border: 1px solid #97999C;
+				-webkit-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+			    transition: all .2s ease-in-out;
+			}
+			
+			.addfox-banner__button:hover {
+				background-color: #2589DE;
+				color: #fff;
+				border: 1px solid #2589DE;
+			}
+
+			@media all and (min-width: 266px) {
+				.addfox-banner__title {				
+					font-size: 22px;
+					line-height: 26px;
+				}
+
+				.addfox-banner__subtitle {
+					font-size: 16px;
+					line-height: 20px;
+				}
+      }
+
+			@media all and (min-width: 330px) {
+				.addfox-banner__title {				
+					font-size: 28px;
+					line-height: 33px;
+				}
+
+				#animation_container,
+				canvas,
+				#dom_overlay_container {
+					width: 255px !important;
+					height: 267px !important;
+				}
+
+				.addfox-banner__subtitle {
+					font-size: 18px;
+					line-height: 23px;
+				}
+      }
+
+			@media all and (min-width: 380px) {
+
+			}
+		</style>
+	</head>
+	<body onload="init();" marginwidth="0" marginheight="0" style="cursor: pointer;">
+		<a href="https://ads.adfox.ru/255877/goLink?ad-session-id=5904691602433732702&amp;hash=c82d014c1853381f&amp;sj=KKQvnIGd6LpjNHcxj46qVHO68wv2IwEv1OAlI0nYBKjGjphGqJ5URbTYXkFcNso5Nnm6FwYFA_YaS4xOHEhuCzjTcv2GLJBaz-Tk1-AB2Q%3D%3D&amp;rand=bmwnxvc&amp;rqs=LLOBuEMxwojCMoNf4DqOUe1Knd6zCBT6&amp;pr=dmpwpln&amp;p1=bxdri&amp;ytt=474439293601813&amp;p5=iorvk&amp;ybv=0.1887&amp;p2=fpkh&amp;ylv=0.1888@https://www.mos.ru/city/projects/kabinet/" target="_top" class="addfox-link">
+			<div class="addfox-banner">
+				<div id="animation_container" style="background-color: rgba(245, 245, 245, 0); width: 265px; height: 276.844px;">
+					<canvas id="canvas" width="265" height="276" style="position: absolute; display: block; background-color: rgba(245, 245, 245, 0); width: 265px; height: 276.844px;"></canvas>
+					<div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 265px; height: 276.844px; position: absolute; left: 0px; top: 0px; display: block;">
+					</div>
+				</div>
+				<div class="addfox-banner__title">
+					Личный кабинет
+				</div>
+				<div class="addfox-banner__subtitle">
+					Еще больше услуг<br>и&nbsp;сервисов
+				</div>
+			<div class="addfox-banner__button">Подробнее</div>       	
+			</div>
+		</a>
+	
+	<script>
+		document.body.style.cursor = 'pointer'; var bannerId=3913920;
+	</script> 
+	<script src="./createjs.min.js.Без названия"></script>
+	<script src="./LK_animation.min.js.Без названия"></script>
+	<script>
+	var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+	function init() {
+		canvas = document.getElementById("canvas");
+		anim_container = document.getElementById("animation_container");
+		dom_overlay_container = document.getElementById("dom_overlay_container");
+		var comp=AdobeAn.getComposition("1881B7D849184A289C02DE44577B9C29");
+		var lib=comp.getLibrary();
+		var loader = new createjs.LoadQueue(false,null,true);
+		loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+		loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+		var lib=comp.getLibrary();
+		loader.loadManifest(lib.properties.manifest);
+	}
+	function handleFileLoad(evt, comp) {
+		var images=comp.getImages();	
+		if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+	}
+	function handleComplete(evt,comp) {
+		//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+		var lib=comp.getLibrary();
+		var ss=comp.getSpriteSheet();
+		var queue = evt.target;
+		var ssMetadata = lib.ssMetadata;
+		for(i=0; i<ssMetadata.length; i++) {
+			ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+		}
+		exportRoot = new lib.LK_animation();
+		stage = new lib.Stage(canvas);	
+		//Registers the "tick" event listener.
+		fnStartAnimation = function() {
+			stage.addChild(exportRoot);
+			createjs.Ticker.framerate = lib.properties.fps;
+			createjs.Ticker.addEventListener("tick", stage);
+		}	    
+		//Code to support hidpi screens and responsive scaling.
+		AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
+		AdobeAn.compositionLoaded(lib.properties.id);
+		fnStartAnimation();
+	}
+	</script>
+	<script src="./mosTizer.js(1).Без названия"></script>
+<script>if(window.onCodeLoad){window.onCodeLoad();}</script><div id="preloadjs-container" style="visibility: hidden; position: absolute; height: 10px; width: 10px; overflow: hidden; transform: translate(-10px, -10px);"></div></body></html>
